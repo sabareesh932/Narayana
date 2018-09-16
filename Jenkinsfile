@@ -6,9 +6,14 @@ pipeline {
         echo 'hare krishna pipeline'
       }
     }
-    stage('qa') {
+    stage('check') {
       steps {
-        retry(count: 2)
+        dir(path: 'https://github.com/sabareesh932/KRISHNA')
+      }
+    }
+    stage('') {
+      steps {
+        pwd()
       }
     }
   }
