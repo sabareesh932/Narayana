@@ -6,5 +6,10 @@ pipeline {
         echo 'hare krishna pipeline'
       }
     }
+    stage('maven') {
+      steps {
+        build 'rama'
+      }
+    }
   }
 }
