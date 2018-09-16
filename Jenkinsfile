@@ -6,9 +6,9 @@ pipeline {
         echo 'hare krishna pipeline'
       }
     }
-    stage('maven') {
+    stage('qa') {
       steps {
-        build 'rama'
+        retry(count: 2)
       }
     }
   }
