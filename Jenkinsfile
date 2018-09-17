@@ -1,9 +1,9 @@
 pipeline {
   agent any
   stages {
-    stage('checkout') {
+    stage('hari checkout') {
       steps {
-        echo 'hare krishna pipeline'
+        node(label: 'harinode')
       }
     }
   }
